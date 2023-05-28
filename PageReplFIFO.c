@@ -6,18 +6,19 @@
 int main()
 {
 	int box[FRAME];
-	int n=20,i,j=0,k;
-	//printf("Enter the size of the string : ");
-	//scanf("%d",&n);
-	// int str[n];
-	int str[] = {7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7,0,1};
+	int n,i,j=0,k;
+	printf("Enter the size of the string : ");
+	scanf("%d",&n);
+	int str[n];
+	//int str[] = {7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7,0,1};
+	
+	printf("Enter the array of string: ");
+	for(i=0; i<FRAME; i++)
+		scanf("%d",&str[i]);
+	
 	for(i=0; i<n; i++)
 		printf("%d\t",str[i]);
 	printf("\n");
-		/*printf("Enter the array of string: ");
-	for(i=0; i<FRAME; i++)
-		scanf("%d",&str[i]);
-	*/
 	int fault_counts = 0;
 
 	for(i=0; i<FRAME; i++)
